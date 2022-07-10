@@ -7,7 +7,7 @@ class LoginPage:
 
     def __init__(self,driver):
         self.driver = driver
-        self.driver.get(test_url)
+        self.driver.get(self.test_url)
         self.driver.find_element(*ConsentPageLocators.consent_button).click()
 
     def log_in(self,login,password):
@@ -20,5 +20,8 @@ class LoginPage:
 
     def get_error_message(self):
         return self.driver.find_element(*LoginPageLocators.error_message).text
+
+    def skip_2fa(self):
+        self.driver.find_element(*LoginPageLocators.skip_button).click()
 
 
