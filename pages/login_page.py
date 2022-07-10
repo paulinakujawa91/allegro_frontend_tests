@@ -1,9 +1,9 @@
 from locators.consent_page_locators import ConsentPageLocators
 from locators.login_page_locators import LoginPageLocators
 
-test_url = "https://allegro.pl.allegrosandbox.pl/logowanie"
 
 class LoginPage:
+    test_url = "https://allegro.pl.allegrosandbox.pl/logowanie"
 
     def __init__(self,driver):
         self.driver = driver
