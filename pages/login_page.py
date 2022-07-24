@@ -10,8 +10,8 @@ class LoginPage:
         self.driver.get(self.test_url)
         self.driver.find_element(*ConsentPageLocators.consent_button).click()
 
-    def log_in(self,login,password):
-        self.driver.find_element(*LoginPageLocators.login).send_keys(login)
+    def log_in(self,email,password):
+        self.driver.find_element(*LoginPageLocators.login).send_keys(email)
         self.driver.find_element(*LoginPageLocators.password).send_keys(password)
         self.driver.find_element(*LoginPageLocators.login_button).click()
 
