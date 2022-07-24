@@ -1,0 +1,25 @@
+from selenium.webdriver.common.by import By
+
+
+class AddressDataPageLocators:
+    arrow_head_button = (By.XPATH, "//div[@data-dropdown-id='user_dropdown']/button")
+    my_account_button = (By.XPATH, '//a[@data-analytics-interaction-value="Konto"]')
+    set_address_link = (By.XPATH, "//div[@data-testid='residential-address-section']/button")
+    street_input = (By.XPATH, '//input[@placeholder="ulica i numer"]')
+    post_code = ( By.XPATH, '//input[@placeholder="kod pocztowy"]')
+    city = (By.XPATH, '//input[@placeholder="miejscowość"]')
+    voivodeship_s = (By.ID, "county")
+    country_s = (By.ID, "countryCode")
+    save_address_button = (By.XPATH, "//button[contains(., 'Zapisz')]")
+    cancel_address_link = (By.XPATH, "//button[contains(., 'anuluj')]")
+    set_delivery_address_link = (By.XPATH, "//button[contains(., 'dodaj nowy adres')]")
+    delivery_first_name_input = (By.XPATH, "//input[@name='firstName']")
+    delivery_last_name_input = (By.XPATH, "//input[@name='lastName']")
+    delivery_company_input = (By.XPATH, "//input[@name='company']")
+    delivery_phone_number_input = (By.XPATH, "//input[@name='phoneNumberWithPrefix.number']")
+    delivery_country_s = (By.ID, "addressBook-countryCode")
+    delivery_street_input = (By.XPATH, "//input[@name='addressLine']")
+    delivery_post_code = (By.XPATH, "//input[@name='zipCode']")
+    delivery_city = (By.XPATH, "/input[@name='city']")
+    save_delivery_address_button = (By.XPATH, "//button[contains(., 'zapisz nowy adres']")
+    cancel_delivery_address_link = (By.XPATH, "//button/img[@alt='anuluj']")
